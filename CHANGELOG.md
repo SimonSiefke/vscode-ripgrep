@@ -10,3 +10,4 @@
 | 2.4.1   | 17.06.22 | fix windows build                                                                                                                          |
 | 2.5.0   | 12.09.22 | Update dependencies                                                                                                                        |
 | 2.6.0   | 20.11.22 | Update dependencies                                                                                                                        |
+| 2.7.0   | 12.03.22 | Update dependencies                                                                                                                        |
