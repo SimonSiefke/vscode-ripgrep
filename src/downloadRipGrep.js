@@ -14,7 +14,8 @@ const { mkdir, createWriteStream, move } = fsExtra;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const VERSION = process.env.RIPGREP_VERSION || "v13.0.0-4";
+const REPOSITORY = `microsoft/ripgrep-prebuilt`;
+const VERSION = process.env.RIPGREP_VERSION || "v13.0.0-7";
 console.log({ VERSION });
 const BIN_PATH = join(__dirname, "../bin");
 
@@ -98,7 +99,7 @@ const untarGz = async (inFile, outDir) => {
 
 export const downloadRipGrep = async () => {
   const target = getTarget();
-  const url = `https://github.com/microsoft/ripgrep-prebuilt/releases/download/${VERSION}/ripgrep-${VERSION}-${target}`;
+  const url = `https://github.com/${REPOSITORY}/releases/download/${VERSION}/ripgrep-${VERSION}-${target}`;
   const downloadPath = `${xdgCache}/vscode-ripgrep/ripgrep-${VERSION}-${target}`;
   if (!(await pathExists(downloadPath))) {
     await downloadFile(url, downloadPath);
