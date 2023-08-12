@@ -12,3 +12,4 @@
 | 2.6.0   | 20.11.22 | Update dependencies                                                                                                                        |
 | 2.7.0   | 12.03.22 | Update dependencies                                                                                                                        |
 | 2.8.0   | 17.03.22 | Update ripgrep-prebuilt to 13.0.0-7                                                                                                        |
+| 2.9.0   | 12.08.22 | Update ripgrep-prebuilt to 13.0.0-10                                                                                                       |
