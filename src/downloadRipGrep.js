@@ -10,12 +10,13 @@ import { fileURLToPath } from "url";
 import VError from "verror";
 import { xdgCache } from "xdg-basedir";
 import fsExtra from "fs-extra";
+
 const { mkdir, createWriteStream, move } = fsExtra;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const REPOSITORY = `microsoft/ripgrep-prebuilt`;
-const VERSION = process.env.RIPGREP_VERSION || "v13.0.0-7";
+const VERSION = process.env.RIPGREP_VERSION || "v13.0.0-10";
 console.log({ VERSION });
 const BIN_PATH = join(__dirname, "../bin");
 
